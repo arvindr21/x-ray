@@ -39,8 +39,11 @@ var all = {
     // MongoDB connection options
     mongo: {
         options: {
-            db: {
-                safe: true
+            useMongoClient: true
+        },
+        replset: {
+            socketOptions: {
+                keepAlive: 1
             }
         }
     },
